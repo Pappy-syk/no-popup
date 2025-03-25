@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Popup</title>
+    <title>Countdown Timer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- รูปภาพและตัวเลขนับถอยหลัง -->
-<div class="countdown-popup">
-    <div class="popup-content">
-        <img class="popup-image" src="img/countdown.png" alt="Election Banner">
-        <div class="countdown-number" id="countdown-number"></div>
-    </div>
+<!-- ส่วนที่ใช้แสดงภาพและตัวเลข -->
+<div class="countdown-container">
+    <img class="popup-image" src="img/countdown.png" alt="Election Banner">
+    <div class="countdown-number" id="countdown-number"></div>
 </div>
 
 <script src="script.js"></script>

@@ -1,71 +1,48 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
 }
 
-.countdown-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
+.countdown-container {
+    position: relative;
     width: 100vw;
     height: 100vh;
-    background: rgba(65, 65, 65, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
-    padding: 0;
-    overflow: hidden;
-}
-
-.popup-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: transparent;
+    background-color: #fff;
 }
 
 .popup-image {
+    position: absolute; /* ทำให้รูปภาพอยู่เบื้องหลัง */
     max-width: 100%;
     height: auto;
-    display: block;
-    z-index: 1000;
+    z-index: 0; /* จัดให้รูปภาพอยู่ข้างหลัง */
 }
 
 .countdown-number {
     position: absolute;
-    color: white;
+    color: yellow;
     font-weight: bold;
-    text-shadow: none;
+    font-size: 10vw;
+    z-index: 1; /* ตัวเลขอยู่ข้างหน้า */
 }
 
 @media (max-width: 600px) {
     .countdown-number {
-        font-size: 14vw;
-        top: 39%;
-        left: 32%;
-        transform: translateX(-50%);
-        color: yellow;
+        font-size: 14vw; /* ขนาดตัวเลขตามขนาดหน้าจอมือถือ */
     }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
     .countdown-number {
-        font-size: 14vw;
-        top: 39%;
-        left: 32%;
-        transform: translateX(-50%);
-        color: yellow;
+        font-size: 14vw; /* ขนาดตัวเลขสำหรับแท็บเล็ต */
     }
 }
 
 @media (min-width: 1025px) {
     .countdown-number {
-        font-size: 110px;
-        top: 40%;
-        left: 32%;
-        transform: translateX(-50%);
-        color: yellow;
+        font-size: 110px; /* ขนาดตัวเลขสำหรับหน้าจอคอมพิวเตอร์ */
     }
 }
