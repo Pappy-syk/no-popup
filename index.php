@@ -11,7 +11,7 @@
 <!-- รูปภาพและตัวเลขนับถอยหลัง -->
 <div class="countdown-popup">
     <div class="popup-content">
-        <img class="popup-image" src="https://www.buayaicity.go.th/docs/welcome-btm.png" alt="Election Banner">
+        <img class="popup-image" src="img/countdown.png" alt="Election Banner">
         <div class="countdown-number" id="countdown-number"></div>
     </div>
 </div>
