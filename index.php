@@ -10,7 +10,7 @@
 
 <!-- ส่วนที่ใช้แสดงภาพและตัวเลข -->
 <div class="countdown-container">
-    <img class="popup-image" src="img/countdown.png" alt="Election Banner">
+    <img class="popup-image" src="img/popup-photoshop2.png" alt="Election Banner">
     <div class="countdown-number" id="countdown-number"></div>
 </div>
 
